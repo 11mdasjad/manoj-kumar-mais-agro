@@ -45,7 +45,7 @@ export default function FeaturedProperties() {
       </div>
       <span className="collection-count" aria-live="polite"><strong>{String(shown.length).padStart(2, "0")}</strong> places to explore</span>
       </div>
-      <div className="property-grid">
+      <div className={`property-grid${shown.length === 4 ? " property-grid-four" : ""}`}>
         {shown.map((p) => (
           <PropertyCard key={p.slug} property={p} />
         ))}

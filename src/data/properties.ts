@@ -196,7 +196,7 @@ export const properties: Property[] = [
     configurations: "Commercial land",
     status: "Availability on request",
     statusKey: "inquiry",
-    featured: false,
+    featured: true,
     description:
       "Commercial development land along expanding Bhubaneswar corridors, with options suited to retail, offices, healthcare, and institutional uses. Discuss parcel dimensions, proposed use, and site access with our team.",
     specifications: [

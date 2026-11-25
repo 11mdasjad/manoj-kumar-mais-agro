@@ -4656,6 +4656,9 @@ a.button-gold {
 .collection-count { display: flex; align-items: center; gap: 7px; font-size: 11px; color: #7a8c8d; white-space: nowrap; }
 .collection-count strong { color: #355e60; font-weight: 650; }
 .property-collection .property-grid { gap: 24px; align-items: stretch; }
+@media (min-width: 600px) {
+  .property-collection .property-grid-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 .property-card.property-card-refined { display: flex; flex-direction: column; border: 1px solid #e1e8e5; border-radius: 18px; background: #fff; box-shadow: 0 5px 20px #183b3a04; overflow: hidden; }
 .property-card.property-card-refined:hover { border-color: #bed1ca; box-shadow: 0 16px 36px -18px #214b4930; transform: translateY(-4px); }
 .property-card-refined .property-image { flex-shrink: 0; width: 100%; height: auto; aspect-ratio: 1.4; margin: 0; border-radius: 0; isolation: isolate; }
@@ -4973,3 +4976,4 @@ a.button-gold {
   .navbar .brand-symbol { width: 44px; height: 44px; }
   .navbar .brand { gap: 8px; }
 }
+
