@@ -9,11 +9,11 @@ export default function Brand({ light = false }: { light?: boolean }) {
     >
       <span className="brand-symbol" aria-hidden="true">
         <Image
-          src="/images/mais-brand-emblem.webp"
+          src="/images/mais-metallic-emblem.webp"
           alt=""
-          width={384}
-          height={256}
-          sizes="(min-width: 1120px) 88px, 64px"
+          width={512}
+          height={512}
+          sizes="(max-width: 799px) 80px, 88px"
         />
       </span>
       <span>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
-import { MessageCircle, CheckCircle2 } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+import WhatsAppIcon from "./WhatsAppIcon";
 import { categories } from "@/data/properties";
 import { whatsappUrl } from "@/lib/site";
 import { validateInquiry, inquiryMessage, type Inquiry } from "@/lib/inquiry";
@@ -131,7 +132,7 @@ export default function InquiryForm({ property = "" }: { property?: string }) {
         </div>
       ) : (
         <button type="submit" className="button button-green w-full">
-          <MessageCircle size={17} />
+          <WhatsAppIcon size={19} />
           Prepare WhatsApp Inquiry
         </button>
       )}

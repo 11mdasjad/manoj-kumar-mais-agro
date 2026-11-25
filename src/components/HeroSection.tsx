@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Play, Phone, MessageCircle } from "lucide-react";
+import { MapPin, Play, Phone } from "lucide-react";
+import WhatsAppIcon from "./WhatsAppIcon";
 import PropertySearch from "./PropertySearch";
 import WhyChooseUs from "./WhyChooseUs";
 import { site, whatsappUrl } from "@/lib/site";
@@ -55,11 +56,12 @@ export default function HeroSection() {
           </a>
           <a
             href={whatsappUrl()}
+            className="estate-whatsapp"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
           >
-            <MessageCircle size={19} />
+            <WhatsAppIcon size={20} />
           </a>
           <a
             href="#architecture-film"

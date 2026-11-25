@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { Menu, X, Phone, ChevronDown, MessageCircle } from "lucide-react";
+import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import WhatsAppIcon from "./WhatsAppIcon";
 import Brand from "./Brand";
 import { categories } from "@/data/properties";
 import { site, whatsappUrl } from "@/lib/site";
@@ -157,7 +158,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <MessageCircle size={19} />
+            <WhatsAppIcon size={21} />
           </a>
           <Link
             href="/contact?visit=1#site-visit"
