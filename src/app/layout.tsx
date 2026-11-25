@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { siteUrl } from "@/lib/site";
+import { siteUrl, socialPreviewImage } from "@/lib/site";
 import "./globals.css";
 const manrope = localFont({
   src: "./fonts/manrope-normal.woff2",
@@ -39,12 +39,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: "MAIS AGRO HOUSE",
-    images: [
-      {
-        url: "/images/mais-villa-hero.webp",
-        alt: "Contemporary architecture and green spaces",
-      },
-    ],
+    images: [socialPreviewImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [socialPreviewImage],
   },
   robots: { index: true, follow: true },
 };

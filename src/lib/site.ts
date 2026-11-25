@@ -24,7 +24,13 @@ export function whatsappUrl(
 }
 export const siteUrl = (
   process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL &&
-    `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`) ||
-  "http://localhost:3000"
+  "https://www.maisagrohouse.com"
 ).replace(/\/$/, "");
+
+export const socialPreviewImage = {
+  url: "/images/mais-agro-house-share-logo.png",
+  width: 256,
+  height: 256,
+  type: "image/png",
+  alt: "MAIS AGRO HOUSE — gold real estate emblem on black",
+};

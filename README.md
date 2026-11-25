@@ -62,6 +62,6 @@ The desktop hero was visually reviewed in Safari. The final action-link styling,
 
 Import this directory as a Next.js project and use the standard `npm run build` build command. There is no custom deployment configuration. Fonts and images are local, so builds do not depend on the old site's availability or on Google Fonts.
 
-Metadata uses Vercel's automatic `VERCEL_PROJECT_PRODUCTION_URL`. If a different canonical domain is required, configure optional `NEXT_PUBLIC_SITE_URL` in the hosting environment. Outside Vercel, this optional setting should be the public production URL; the development fallback is `http://localhost:3000`.
+Metadata defaults to the public canonical domain `https://www.maisagrohouse.com`. Configure `NEXT_PUBLIC_SITE_URL` only when a different canonical domain is required. General pages use the company logo PNG for Open Graph and Twitter link previews; property, project, service, and article detail pages retain their specific images. Deploy metadata and public image changes together. Previously shared previews may remain cached by messaging platforms.
 
 The implementation is not deployed. Before replacing the current site, review migrated listing details and images, test the WhatsApp handoff on actual mobile devices, and connect the original backend if direct inquiry storage is required.
