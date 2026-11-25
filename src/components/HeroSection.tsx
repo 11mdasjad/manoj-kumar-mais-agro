@@ -4,6 +4,7 @@ import { MapPin, Play, Phone } from "lucide-react";
 import WhatsAppIcon from "./WhatsAppIcon";
 import PropertySearch from "./PropertySearch";
 import WhyChooseUs from "./WhyChooseUs";
+import HeroStats from "./HeroStats";
 import { site, whatsappUrl } from "@/lib/site";
 
 export default function HeroSection() {
@@ -51,7 +52,7 @@ export default function HeroSection() {
           className="estate-contact-rail"
           aria-label="Contact Mais Agro House"
         >
-          <a href={site.phoneHref} aria-label="Call Mais Agro House">
+          <a href={site.phoneHref} className="estate-call" aria-label="Call Mais Agro House">
             <Phone size={18} />
           </a>
           <a
@@ -65,6 +66,7 @@ export default function HeroSection() {
           </a>
           <a
             href="#architecture-film"
+            className="estate-video"
             aria-label="Watch the 3D architecture film"
           >
             <Play size={18} />
@@ -102,35 +104,38 @@ export default function HeroSection() {
         </div>
         <span className="estate-image-note">ARCHITECTURAL INSPIRATION</span>
       </section>
+      <HeroStats />
       <section
-        className="container home-search-section"
+        className="home-search-section"
         id="find-your-place"
         aria-labelledby="home-search-title"
       >
-        <div className="home-search-intro">
-          <div>
-            <p className="eyebrow">
-              <span aria-hidden="true" /> FIND YOUR NEXT CHAPTER
-            </p>
-            <h2 id="home-search-title">
-              Good places.
-              <br />
-              <em>Great beginnings.</em>
-            </h2>
+        <div className="container">
+          <div className="home-search-intro">
+            <div>
+              <p className="eyebrow">
+                <span aria-hidden="true" /> FIND YOUR NEXT CHAPTER
+              </p>
+              <h2 id="home-search-title">
+                Good places.
+                <br />
+                <em>Great beginnings.</em>
+              </h2>
+            </div>
+            <div className="home-search-context">
+              <span className="search-region">
+                <MapPin size={14} aria-hidden="true" /> BHUBANESWAR & BEYOND
+              </span>
+              <p>
+                From your first home to your next investment.
+                <br />
+                Find a space that fits the life you have in mind.
+              </p>
+            </div>
           </div>
-          <div className="home-search-context">
-            <span className="search-region">
-              <MapPin size={14} aria-hidden="true" /> BHUBANESWAR & BEYOND
-            </span>
-            <p>
-              From your first home to your next investment.
-              <br />
-              Find a space that fits the life you have in mind.
-            </p>
-          </div>
+          <PropertySearch />
+          <WhyChooseUs compact />
         </div>
-        <PropertySearch />
-        <WhyChooseUs compact />
       </section>
     </>
   );

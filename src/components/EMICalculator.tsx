@@ -96,7 +96,7 @@ export default function EMICalculator() {
                   value={f.value}
                   onChange={(e) => f.set(Number(e.target.value))}
                   style={{
-                    background: `linear-gradient(to right, var(--green) ${Math.max(0, ((f.value - f.min) / (f.max - f.min)) * 100)}%, #dedfd5 0%)`,
+                    background: `linear-gradient(to right, var(--gold) ${Math.max(0, ((f.value - f.min) / (f.max - f.min)) * 100)}%, var(--line) 0%)`,
                   }}
                 />
                 <div className="range-labels">

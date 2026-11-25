@@ -7,6 +7,14 @@ export const site = {
   address: "Patia, Raghunathpur, Nandankanan Road, Bhubaneswar, Odisha 751024",
   landmark: "Near Punjab National Bank",
   hours: "Monday – Sunday · 9:00 AM – 7:00 PM",
+  // Add verified company profile URLs here when supplied by the owner.
+  socialProfiles: {
+    instagram: "",
+    facebook: "",
+    linkedin: "",
+    youtube: "",
+    x: "",
+  },
   sourceUrl: "https://manish01-1.onrender.com",
 };
 export function whatsappUrl(
