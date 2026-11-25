@@ -4786,7 +4786,8 @@ a.button-gold {
 .footer-refined .footer-contact address p { color: #304b54; font-size: 14px; font-weight: 550; line-height: 1.85; margin: 0; }
 .footer-refined .footer-contact address .footer-landmark { margin-top: 8px; }
 .footer-refined .footer-contact-links { display: flex; flex-direction: column; gap: 2px; margin-top: 18px; }
-.footer-refined .footer-contact-links a[href^="tel:"] { white-space: nowrap; }
+.footer-refined .footer-contact-links a[href^="tel:"] { white-space: nowrap; color: #89631b; font-weight: 800; font-size: 18px; }
+.footer-refined .footer-contact-links a[href^="tel:"]:hover { color: #68490f; }
 .footer-refined .footer-contact-links a[href^="mailto:"] { overflow-wrap: anywhere; }
 .footer-refined .footer-bottom { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding-block: 22px 96px; }
 .footer-refined .footer-bottom > p,
